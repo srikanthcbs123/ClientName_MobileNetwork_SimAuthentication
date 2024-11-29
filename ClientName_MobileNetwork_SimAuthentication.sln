@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientName_MobileNetwork_SimAuthentication", "ClientName_MobileNetwork_SimAuthentication\ClientName_MobileNetwork_SimAuthentication.csproj", "{41E7D246-D887-4EC0-A1B7-C154B5F5CACB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientName_MobileNetwork_SimAuthentication_BusinessEntities", "ClientName_MobileNetwork_SimAuthentication_BusinessEntities\ClientName_MobileNetwork_SimAuthentication_BusinessEntities.csproj", "{0620C341-5F37-4EB5-9E87-5BE7F9E8CB99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientName_MobileNetwork_SimAuthentication_DBConnectivity", "ClientName_MobileNetwork_SimAuthentication_DBConnectivity\ClientName_MobileNetwork_SimAuthentication_DBConnectivity.csproj", "{7A307A8E-A752-4279-B579-35FA8BBBE09D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientName_MobileNetwork_SimAuthentication_ServiceLayer", "ClientName_MobileNetwork_SimAuthentication_ServiceLayer\ClientName_MobileNetwork_SimAuthentication_ServiceLayer.csproj", "{3518EABE-713C-4C60-83BF-917F35928263}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientName_MobileNetwork_SimAuthentication_RepositoryLayer", "ClientName_MobileNetwork_SimAuthentication_RepositoryLayer\ClientName_MobileNetwork_SimAuthentication_RepositoryLayer.csproj", "{A5488131-83DC-4060-BDFE-9EDDBAB4921D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41E7D246-D887-4EC0-A1B7-C154B5F5CACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41E7D246-D887-4EC0-A1B7-C154B5F5CACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41E7D246-D887-4EC0-A1B7-C154B5F5CACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41E7D246-D887-4EC0-A1B7-C154B5F5CACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0620C341-5F37-4EB5-9E87-5BE7F9E8CB99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0620C341-5F37-4EB5-9E87-5BE7F9E8CB99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0620C341-5F37-4EB5-9E87-5BE7F9E8CB99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0620C341-5F37-4EB5-9E87-5BE7F9E8CB99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A307A8E-A752-4279-B579-35FA8BBBE09D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A307A8E-A752-4279-B579-35FA8BBBE09D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A307A8E-A752-4279-B579-35FA8BBBE09D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A307A8E-A752-4279-B579-35FA8BBBE09D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3518EABE-713C-4C60-83BF-917F35928263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3518EABE-713C-4C60-83BF-917F35928263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3518EABE-713C-4C60-83BF-917F35928263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3518EABE-713C-4C60-83BF-917F35928263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5488131-83DC-4060-BDFE-9EDDBAB4921D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5488131-83DC-4060-BDFE-9EDDBAB4921D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5488131-83DC-4060-BDFE-9EDDBAB4921D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5488131-83DC-4060-BDFE-9EDDBAB4921D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BBB6F0E8-4471-48F7-AB68-D6463B8D3693}
+	EndGlobalSection
+EndGlobal

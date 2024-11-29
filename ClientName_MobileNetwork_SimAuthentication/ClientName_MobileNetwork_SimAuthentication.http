@@ -1,0 +1,6 @@
+@ClientName_MobileNetwork_SimAuthentication_HostAddress = http://localhost:5170
+
+GET {{ClientName_MobileNetwork_SimAuthentication_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClientName_MobileNetwork_SimAuthentication_BusinessEntities\ClientName_MobileNetwork_SimAuthentication_BusinessEntities.csproj" />
+    <ProjectReference Include="..\ClientName_MobileNetwork_SimAuthentication_RepositoryLayer\ClientName_MobileNetwork_SimAuthentication_RepositoryLayer.csproj" />
+  </ItemGroup>
+
+</Project>
