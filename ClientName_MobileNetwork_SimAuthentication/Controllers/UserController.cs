@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ClientName_MobileNetwork_SimAuthentication_BusinessEntities.DTOs;
 using ClientName_MobileNetwork_SimAuthentication_BusinessEntities.Interfaces;
+using System.Text;
 namespace ClientName_MobileNetwork_SimAuthentication.Controllers
 {
     [Route("api/[controller]")]
@@ -19,10 +20,35 @@ namespace ClientName_MobileNetwork_SimAuthentication.Controllers
         {
             try
             {
-                if (!ModelState.IsValid)
+
+               //dont use multiple string  concadination purpose below process.
+               //use stringbuilder concept beacuse it reduces the object creation.
+                string a = "hello";//it will create object
+                string b = "hai";//it will create object
+                string c = "hyderabad";//it will create object
+                string result = a + b + c;//it will create object
+
+                // Initialize a StringBuilder to store validation messages
+                StringBuilder validationMessages = new StringBuilder();//it will create only one object
+
+                // Validate input fields
+                if (string.IsNullOrWhiteSpace(userSignInDto.UserName) || string.IsNullOrEmpty(userSignInDto.UserName))
                 {
-                    return StatusCode(StatusCodes.Status400BadRequest, ModelState);
+                    validationMessages.AppendLine("UserName is required.");//in that object we are appending the data
                 }
+
+                if (string.IsNullOrWhiteSpace(userSignInDto.Password) || string.IsNullOrEmpty(userSignInDto.Password))
+                {
+                    validationMessages.AppendLine("Password is required.");//in that object we are appending the data
+                }
+                if (validationMessages.Length>0)
+                {
+                    return StatusCode(StatusCodes.Status400BadRequest, Convert.ToString(validationMessages));
+                }
+                //if (!ModelState.IsValid)
+                //{
+                //    return StatusCode(StatusCodes.Status400BadRequest, ModelState);
+                //}
                 else
                 {
                     var res = await _userService.UserSignIn(userSignInDto);
@@ -42,10 +68,38 @@ namespace ClientName_MobileNetwork_SimAuthentication.Controllers
         {
             try
             {
-                if (!ModelState.IsValid)
+                
+                //use stringbuilder concept beacuse it reduces the object creation.
+                // Initialize a StringBuilder to store validation messages
+                StringBuilder validationMessages = new StringBuilder();//it will create only one object
+
+                // Validate input fields
+                if (string.IsNullOrWhiteSpace(userSignUpDto.Username) || string.IsNullOrEmpty(userSignUpDto.Username))
                 {
-                    return StatusCode(StatusCodes.Status400BadRequest, ModelState);
+                    validationMessages.AppendLine("UserName is required.");//in that object we are appending the data
                 }
+
+                if (string.IsNullOrWhiteSpace(userSignUpDto.Password) || string.IsNullOrEmpty(userSignUpDto.Password))
+                {
+                    validationMessages.AppendLine("Password is required.");//in that object we are appending the data
+                }
+                if (string.IsNullOrWhiteSpace(userSignUpDto.FullName) || string.IsNullOrEmpty(userSignUpDto.FullName))
+                {
+                    validationMessages.AppendLine("FullName is required.");//in that object we are appending the data
+                }
+
+                if (string.IsNullOrWhiteSpace(userSignUpDto.Email) || string.IsNullOrEmpty(userSignUpDto.Email))
+                {
+                    validationMessages.AppendLine("Email is required.");//in that object we are appending the data
+                }
+                if (validationMessages.Length > 0)
+                {
+                    return StatusCode(StatusCodes.Status400BadRequest, Convert.ToString(validationMessages));
+                }
+                //if (!ModelState.IsValid)
+                //{
+                //    return StatusCode(StatusCodes.Status400BadRequest, ModelState);
+                //}
                 else
                 {
                     var res = await _userService.UserSignUp(userSignUpDto);
